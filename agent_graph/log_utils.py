@@ -44,7 +44,6 @@ if __name__ == '__main__':
     # log.warning('这是一个警告')
     # log.trace('xxxx')
     print('str.pdf'['str.pdf'.rindex('.'):])
-    # @log.catch  # 整个函数自动加上try， catch。自动捕获异常，并且通过日志打印
     def test():
         try:
             print(3/0)
