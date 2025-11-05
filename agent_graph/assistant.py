@@ -47,11 +47,11 @@ class CtripAssistant:
                 or isinstance(result.content, list) # 内容列表第一个元素没有‘text’
                 and not result.content[0].get('text') # 没有得到一个成功的输出
             ):
-                message = state['message'] + [('user', '请提供一个真实的输出作为回应。')]
-                state = {**state, 'message':message}
+                message = state['messages'] + [('user', '请提供一个真实的输出作为回应。')]
+                state = {**state, 'messages':message}
             else:
                 break
-        return {'message': result} # 返回状态，是一个列表，列表里面是字典
+        return {'messages': result} # 返回状态，是一个列表，列表里面是字典
 
 # os.environ["TAVILY_API_KEY"] = "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"
 # tavily_tool = TavilySearchResults(max_results=1)
