@@ -12,3 +12,6 @@
 ### 工程执行
 - 关于llm模型（`llm_tavily.py`）：本项目用的在线智谱`GLM-4.5`，需要配置openai_api_key和openai_api_base，也可以用本地部署的llm，修改key和base_url即可；
 - 执行脚本：
+
+## 需求描述
+### 
